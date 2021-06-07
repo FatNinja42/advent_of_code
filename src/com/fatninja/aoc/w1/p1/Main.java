@@ -17,10 +17,10 @@ public class Main {
     }
 
     private static int[] getResult(List<Integer> integers, int sum) {
-        for (int i =0 ;i < integers.size(); i++) {
+        for (int i = 0; i < integers.size(); i++) {
             for (int j = i; j < integers.size(); j++) {
                 if (integers.get(i) + integers.get(j) == sum) {
-                    return new int[] {integers.get(i), integers.get(j)};
+                    return new int[]{integers.get(i), integers.get(j)};
                 }
             }
         }
