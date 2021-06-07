@@ -9,10 +9,14 @@ import java.util.stream.Stream;
 
 public class FileUtils {
 
-    public static List<Integer> readFromFile(String path) throws IOException {
+    public static List<Integer> readIntegerListFromFile(String path) throws IOException {
         Stream<String> lines = Files.lines(Paths.get(path));
 
         return lines.map(Integer::valueOf)
                 .collect(Collectors.toList());
+    }
+
+    public static List<String> readStringListFromFile(String path) throws IOException {
+        return Files.lines(Paths.get(path)).collect(Collectors.toList());
     }
 }
