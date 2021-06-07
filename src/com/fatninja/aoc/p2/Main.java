@@ -16,11 +16,11 @@ public class Main {
     }
 
     private static int[] getResult(List<Integer> integers, int sum) {
-        for (int i =0 ;i < integers.size() - 3; i++) {
-            for (int j = i+1; j < integers.size() - 2; j++) {
-                for (int k = j+1; k < integers.size() - 1; k++) {
+        for (int i = 0; i < integers.size() - 3; i++) {
+            for (int j = i + 1; j < integers.size() - 2; j++) {
+                for (int k = j + 1; k < integers.size() - 1; k++) {
                     if (integers.get(i) + integers.get(j) + integers.get(k) == sum) {
-                        return new int[] {integers.get(i), integers.get(j), integers.get(k)};
+                        return new int[]{integers.get(i), integers.get(j), integers.get(k)};
                     }
                 }
             }
