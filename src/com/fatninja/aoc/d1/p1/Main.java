@@ -1,4 +1,4 @@
-package com.fatninja.aoc.w1.p1;
+package com.fatninja.aoc.d1.p1;
 
 import com.fatninja.aoc.utils.FileUtils;
 
@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         int sum = 2020;
-        List<Integer> integers = FileUtils.readFromFile("src/resources/w1/p1/input.txt");
+        List<Integer> integers = FileUtils.readFromFile("src/resources/d1/p1/input.txt");
 
         int[] result = getResult(integers, sum);
 
