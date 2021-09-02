@@ -45,10 +45,10 @@ public class Main {
                 continue;
             }
 
-            String[] components = line.split(" ");
-            for (String component : components) {
-                String[] definition = component.split(":");
-                passportDetails.put(definition[0], definition[1]);
+            String[] definitions = line.split(" ");
+            for (String definition : definitions) {
+                String[] components = definition.split(":");
+                passportDetails.put(components[0], components[1]);
             }
         }
 
@@ -100,11 +100,11 @@ public class Main {
         return stringValue.matches(COLOR_REGEX);
     }
 
-    private static boolean isEyeColorValid(String stringValue) {
-        return EYE_COLORS.contains(stringValue);
-    }
-
     private static boolean isPassportIdValid(String stringValue) {
         return stringValue.matches(ONLY_DIGITS_REGEX);
+    }
+
+    private static boolean isEyeColorValid(String stringValue) {
+        return EYE_COLORS.contains(stringValue);
     }
 }
