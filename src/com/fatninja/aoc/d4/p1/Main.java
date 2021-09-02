@@ -22,10 +22,10 @@ public class Main {
                 continue;
             }
 
-            String[] components = line.split(" ");
-            for (String component : components) {
-                String[] definition = component.split(":");
-                passportDetails.put(definition[0], definition[1]);
+            String[] definitions = line.split(" ");
+            for (String definition : definitions) {
+                String[] components = definition.split(":");
+                passportDetails.put(components[0], components[1]);
             }
         }
 
