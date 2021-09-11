@@ -14,7 +14,7 @@ public class MatrixUtils {
         List<String> lines = Files.lines(Paths.get(path))
                 .collect(toList());
 
-        char [][] matrix = new char[lines.size()][lines.get(0).length()];
+        char[][] matrix = new char[lines.size()][lines.get(0).length()];
         int i = 0;
         for (String line : lines) {
             char[] chars = line.toCharArray();
@@ -22,6 +22,16 @@ public class MatrixUtils {
         }
 
         return matrix;
+    }
+
+    public static char[][] cloneMatrix(char[][] matrixToCopy) {
+        char[][] clone = matrixToCopy.clone();
+
+        for (int i = 0; i < matrixToCopy.length; i++) {
+            clone[i] = matrixToCopy[i].clone();
+        }
+
+        return clone;
     }
 
     public static void printCharMatrix(char[][] matrix) {
