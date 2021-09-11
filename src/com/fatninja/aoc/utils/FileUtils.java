@@ -16,6 +16,13 @@ public class FileUtils {
                 .collect(Collectors.toList());
     }
 
+    public static List<Long> readLongListFromFile(String path) throws IOException {
+        Stream<String> lines = Files.lines(Paths.get(path));
+
+        return lines.map(Long::valueOf)
+                .collect(Collectors.toList());
+    }
+
     public static List<String> readStringListFromFile(String path) throws IOException {
         return Files.lines(Paths.get(path)).collect(Collectors.toList());
     }
