@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        List<String> fileLines = FileUtils.readStringListFromFile("src/resources/d6/p1/input.txt");
+        List<String> fileLines = FileUtils.readStringListFromFile("src/resources/d6/input.txt");
 
         HashSet<Character> questionSet = new HashSet<>();
         int sum = 0;

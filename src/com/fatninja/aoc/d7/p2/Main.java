@@ -11,7 +11,7 @@ public class Main {
     private static int finalSum = 0;
 
     public static void main(String[] args) throws IOException {
-        List<String> fileLines = FileUtils.readStringListFromFile("src/resources/d7/p1/input.txt");
+        List<String> fileLines = FileUtils.readStringListFromFile("src/resources/d7/input.txt");
 
         for (String line : fileLines) {
             String[] rule = line.split("contain");

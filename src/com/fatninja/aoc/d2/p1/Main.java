@@ -8,7 +8,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        List<String> policies = FileUtils.readStringListFromFile("src/resources/d2/p1/input.txt");
+        List<String> policies = FileUtils.readStringListFromFile("src/resources/d2/input.txt");
 
         int result = checkNoOfValidPasswords(policies);
 

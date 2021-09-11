@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        List<String> instructions = FileUtils.readStringListFromFile("src/resources/d8/p1/input.txt");
+        List<String> instructions = FileUtils.readStringListFromFile("src/resources/d8/input.txt");
         boolean[] executed = new boolean[instructions.size()];
         int globalValue = 0;
 

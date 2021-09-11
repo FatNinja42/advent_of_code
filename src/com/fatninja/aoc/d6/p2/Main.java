@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        List<String> fileLines = FileUtils.readStringListFromFile("src/resources/d6/p1/input.txt");
+        List<String> fileLines = FileUtils.readStringListFromFile("src/resources/d6/input.txt");
 
         int sum = 0;
         int groupCount = 0;

@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        char[][] map = MatrixUtils.readCharMatrixFromFile("src/resources/d3/p1/input.txt");
+        char[][] map = MatrixUtils.readCharMatrixFromFile("src/resources/d3/input.txt");
 
         int noOfTrees1 = getNoOfTrees(map, 1, 1);
         int noOfTrees2 = getNoOfTrees(map, 1, 3);
