@@ -10,6 +10,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         List<Integer> adapters = readIntegerListFromFile("src/resources/d10/input.txt");
         adapters.add(0);
+
         List<Integer> sortedAdapters = adapters.stream()
                 .sorted()
                 .collect(Collectors.toList());

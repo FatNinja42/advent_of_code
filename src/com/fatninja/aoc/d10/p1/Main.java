@@ -19,11 +19,10 @@ public class Main {
 
         int lastAdapter = 0;
         for (Integer adapter : sortedAdapters) {
-            int diff = adapter - lastAdapter;
-            adapterDifferences[diff]++;
+            adapterDifferences[adapter - lastAdapter]++;
             lastAdapter = adapter;
         }
-        adapterDifferences[3] ++;
+        adapterDifferences[3]++;
 
         System.out.println(Arrays.toString(adapterDifferences));
         System.out.println(adapterDifferences[1] * adapterDifferences[3]);
