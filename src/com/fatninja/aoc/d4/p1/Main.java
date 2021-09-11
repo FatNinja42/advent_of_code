@@ -10,7 +10,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         int count = 0;
-        List<String> lines = FileUtils.readStringListFromFile("src/resources/d4/p1/input.txt");
+        List<String> lines = FileUtils.readStringListFromFile("src/resources/d4/input.txt");
         HashMap<String, String> passportDetails = new HashMap<>();
 
         for (String line : lines) {

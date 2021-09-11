@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         int sum = 2020;
-        List<Integer> integers = FileUtils.readIntegerListFromFile("src/resources/d1/p1/input.txt");
+        List<Integer> integers = FileUtils.readIntegerListFromFile("src/resources/d1/input.txt");
 
         int[] result = getResult(integers, sum);
 

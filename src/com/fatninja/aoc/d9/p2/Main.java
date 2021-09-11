@@ -8,7 +8,7 @@ import static com.fatninja.aoc.utils.FileUtils.readLongListFromFile;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        List<Long> numbers = readLongListFromFile("src/resources/d9/p1/input.txt");
+        List<Long> numbers = readLongListFromFile("src/resources/d9/input.txt");
         int preamble = 25;
         long invalidNumber = 0;
 

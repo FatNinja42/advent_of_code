@@ -8,7 +8,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        List<String> codeList = FileUtils.readStringListFromFile("src/resources/d5/p1/input.txt");
+        List<String> codeList = FileUtils.readStringListFromFile("src/resources/d5/input.txt");
         int maxValue = 908;
         int[] flagList = new int[maxValue + 1];
 
