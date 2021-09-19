@@ -3,33 +3,30 @@ package com.fatninja.aoc.d15.p1;
 import com.fatninja.aoc.utils.FileUtils;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class Main {
-
-    private static final int P1_LIMIT = 2020;
+public class Main2 {
+    private static final int P2_LIMIT = 30_000_000;
 
     public static void main(String[] args) throws IOException {
         List<Integer> integers = FileUtils.readCommaSeparatedIntListFromFile("src/resources/d15/input.txt");
-        Map<Integer, Integer> occurrences = new HashMap<>();
+        int[] occurrences = new int[100000000];
 
         int step = 0;
         for (Integer integer : integers) {
-            occurrences.put(integer, ++step);
+            occurrences[integer] = ++step;
         }
-
         int lastNumber = integers.get(step - 1);
 
-        while (step < P1_LIMIT) {
-            Integer lastAppearance = occurrences.get(lastNumber);
-            occurrences.put(lastNumber, step);
+        int occurrence;
+        while (step < P2_LIMIT) {
+            occurrence = occurrences[lastNumber];
+            occurrences[lastNumber] = step;
 
-            if (lastAppearance == null) {
+            if (occurrence == 0) {
                 lastNumber = 0;
             } else {
-                lastNumber = step - lastAppearance;
+                lastNumber = step - occurrence;
             }
 
             step++;
