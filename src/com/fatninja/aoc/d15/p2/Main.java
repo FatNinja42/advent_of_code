@@ -1,11 +1,12 @@
-package com.fatninja.aoc.d15.p1;
+package com.fatninja.aoc.d15.p2;
 
 import com.fatninja.aoc.utils.FileUtils;
 
 import java.io.IOException;
 import java.util.List;
 
-public class Main2 {
+public class Main {
+
     private static final int P2_LIMIT = 30_000_000;
 
     public static void main(String[] args) throws IOException {
